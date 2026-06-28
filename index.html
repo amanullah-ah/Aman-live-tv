@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aman Ullah · Live TV — Watch 80+ Free Live HD TV Channels</title>
+  <meta name="description" content="Watch 90+ live HD TV channels free on HN — News, Sports, Entertainment, Music, Kids, Religious & Regional channels streaming instantly online." />
+  <meta name="keywords" content="live tv, free live tv, watch live tv online, HD tv channels, pakistani tv channels, news live, sports live, aman ullah, HN AMAN" />
+  <meta name="author" content="Aman Ullah" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://aman-live-tv.vercel.app/" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://ik.imagekit.io/amanphoto/file_00000000564c720bb112baa5e9ff49cb.png" />
+  <link rel="apple-touch-icon" href="https://ik.imagekit.io/amanphoto/file_00000000564c720bb112baa5e9ff49cb.png" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aman-live-tv.vercel.app/" />
+  <meta property="og:title" content="Aman Ullah · Live TV — Watch 90+ Free Live HD TV Channels" />
+  <meta property="og:description" content="Watch 90+ live HD TV channels free — News, Sports, Entertainment, Music, Kids, Religious & Regional. Instant streaming, no signup." />
+  <meta property="og:image" content="https://ik.imagekit.io/amanphoto/file_00000000e80871f8bbc9b8560096a56a.png" />
+  <meta property="og:site_name" content="Aman Ullah Live TV" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://aman-live-tv.vercel.app/" />
+  <meta name="twitter:title" content="Aman Ullah · Live TV — Watch 90+ Free Live HD TV Channels" />
+  <meta name="twitter:description" content="Watch 90+ live HD TV channels free — News, Sports, Entertainment, Music, Kids, Religious & Regional. Instant streaming, no signup." />
+  <meta name="twitter:image" content="https://ik.imagekit.io/amanphoto/file_00000000e80871f8bbc9b8560096a56a.png" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Aman Ullah Live TV",
+    "url": "https://aman-live-tv.vercel.app/",
+    "description": "Watch 90+ live HD TV channels free online — News, Sports, Entertainment, Music, Kids, Religious & Regional channels.",
+    "author": {
+      "@type": "Person",
+      "name": "Aman Ullah"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "HN-AMAN",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ik.imagekit.io/amanphoto/file_00000000e80871f8bbc9b8560096a56a.png"
+      }
+    }
+  }
+  </script>
+
+  <!-- HLS.js for m3u8 stream playback -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.4.10/hls.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Profile Pill Navbar (sticky, independent of header) -->
+  <div class="profile-nav">
+    <div class="profile-nav-left">
+      <img class="profile-avatar"
+           src="https://ik.imagekit.io/amanphoto/20260620_164003.png?updatedAt=1781955650166"
+           alt="Aman Ullah" />
+      <span class="profile-name">AMAN ULLAH</span>
+    </div>
+
+    <div class="profile-socials">
+      <!-- TikTok -->
+      <a href="https://www.tiktok.com/@amanullah.736" target="_blank" rel="noreferrer"
+         class="profile-social-btn tiktok" title="TikTok">
+        <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+          <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/>
+        </svg>
+      </a>
+
+      <!-- YouTube -->
+      <a href="https://youtube.com/@sidhustudio-29m?si=5omS_ADhovewI2P0" target="_blank" rel="noreferrer"
+         class="profile-social-btn youtube" title="YouTube">
+        <svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+          <path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64s-170.8 0-213.4 11.5c-23.5 6.3-42 24.9-48.3 48.6C16 167 16 256 16 256s0 89 10.3 131.9c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.1 48.3-47.8C560 345 560 256 560 256s0-89-10.3-131.9zM232 334V178l142.7 78L232 334z"/>
+        </svg>
+      </a>
+
+      <!-- WhatsApp Channel -->
+      <a href="https://whatsapp.com/channel/0029Vb8Hsxs72WU1Dx57eu1q" target="_blank" rel="noreferrer"
+         class="profile-social-btn whatsapp" title="WhatsApp Channel">
+        <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+          <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 110.9L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-156.9zM223.9 438.5c-33.2 0-65.7-8.9-94-25.8l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.4-186.6 184.4zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.6-9.7-1.5-2.8-13.4-32.3-18.3-44.2-4.8-11.6-9.8-10-13.5-10.2-3.5-.2-7.5-.2-11.5-.2-4 0-10.5 1.5-16 7.5-5.5 6-21 20.6-21 50.2s21.6 58.3 24.6 62.3c3 4 41.8 63.8 102.4 86.9 50.8 19.3 61.1 16.4 72.4 15.4 11.3-1 32.8-13.4 37.4-26.4 4.6-13 4.6-24.2 3.2-26.5z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- ── HEADER ─────────────────────────────────────── -->
+  <header>
+
+    <!-- Utility row: Logo / Live TV label / Search / LIVE badge -->
+    <div class="header-utility-row">
+      <div class="header-left">
+
+        <!-- Logo icon -->
+        <div class="logo-box logo-box-img">
+          <img src="https://ik.imagekit.io/amanphoto/file_00000000e80871f8bbc9b8560096a56a.png" alt="Logo" />
+        </div>
+
+      <div style="display:flex; align-items:center; gap:10px;">
+        <!-- Search -->
+        <div class="search-wrap">
+          <span class="search-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+          </span>
+          <input id="search-input" type="text" placeholder="Search channel..." autocomplete="off" />
+        </div>
+
+        <!-- Live badge -->
+        <div class="live-badge">
+          <div class="live-dot"></div>
+          LIVE
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── PLAYER ──────────────────────────────────────── -->
+  <section id="player-section">
+    <div class="player-wrap">
+      <video id="video-player" controls autoplay playsinline></video>
+
+      <!-- Quality selector (3-dot menu) -->
+      <button class="quality-btn" id="quality-btn" title="Quality" aria-label="Quality settings">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/>
+        </svg>
+      </button>
+      <div class="quality-menu" id="quality-menu"></div>
+
+      <!-- Loading overlay -->
+      <div class="loading-overlay" id="loading-overlay">
+        <div class="scan-loader"></div>
+        <div class="loading-text">Loading stream...</div>
+      </div>
+
+      <!-- Error overlay -->
+      <div class="error-overlay" id="error-overlay">
+        <div class="error-icon">📡</div>
+        <strong>Stream unavailable</strong>
+        <div class="error-msg">This channel is temporarily offline or your connection is slow.</div>
+        <button class="retry-btn" onclick="retryStream()">Try Again</button>
+      </div>
+    </div>
+
+    <!-- Now playing bar -->
+    <div class="player-info">
+      <div class="now-playing">
+        <img id="now-logo" src="" alt="" />
+        <span id="now-name">—</span>
+      </div>
+      <div class="nav-btns">
+        <button class="nav-btn" onclick="prevChannel()">&#8592; Prev</button>
+        <button class="nav-btn" onclick="nextChannel()">Next &#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CATEGORY TABS ──────────────────────────────── -->
+  <div class="cat-tabs" id="cat-tabs">
+    <button class="cat-tab active" data-cat="All">All</button>
+    <button class="cat-tab" data-cat="Entertainment">Entertainment</button>
+    <button class="cat-tab" data-cat="News">News</button>
+    <button class="cat-tab" data-cat="Sports">Sports</button>
+    <button class="cat-tab" data-cat="Music">Music</button>
+    <button class="cat-tab" data-cat="Kids">Kids</button>
+    <button class="cat-tab" data-cat="Religious">Religious</button>
+    <button class="cat-tab" data-cat="Documentary">Documentary</button>
+    <button class="cat-tab" data-cat="Regional">Regional</button>
+  </div>
+
+  <!-- ── CHANNEL GRID ───────────────────────────────── -->
+  <div class="grid-section">
+    <div class="grid-header">
+      <h2 id="cat-label">All Channels</h2>
+      <span class="channel-count" id="ch-count">84 CHANNALS</span>
+    </div>
+
+    <div class="channel-grid" id="channel-grid"></div>
+    <div class="no-results" id="no-results">No channels found for "<span id="search-term"></span>"</div>
+  </div>
+
+  <!-- ── FOOTER ─────────────────────────────────────── -->
+  <footer>
+    <p>© 2026 All Rights Reserved.Created by <span style="font-family: 'Orbitron', serif; color:#FF9F1C; font-weight:900;">AMAN ULLAH</span></p>
+  </footer>
+
+  <!-- ── SCRIPT ─────────────────────────────────────── -->
+  <script src="script.js"></script>
+
+</body>
