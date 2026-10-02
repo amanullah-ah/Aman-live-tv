@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://aman-live-tv.vercel.app/sitemap.xml
